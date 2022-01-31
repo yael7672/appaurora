@@ -1,0 +1,38 @@
+<!-- <!-- <div class="container">
+    <h1>חפש קריאה</h1>
+      <div class="select-wrapper">
+        <select class="select">
+            <div *ngFor="let p of Incidents; index as i; first as isFirst" dir="rtl"> 
+                <option value="value3">AAA</option>
+          <option value="value3">BB</option>
+          <option value="value3">C</option>
+         </div>
+        </select>
+      </div>
+  </div> -->
+  <!-- <h1>xxxxxx</h1>-->
+         <!-- <span  *ngFor="let s of listIncident.Incidents; index as i; first as isFirst" dir="rtl">">
+           <input type="radio" [(ngModel)]='s.IncidentNumber'   value='{{s}}' (click)="add()" > {{s}}<br>
+         </span>   -->
+       
+            <!-- <input type="radio" [(ngModel)]='s.CreatedOn'    (click)="add()" > <br>
+            {{s.CreatedOn}}  -->
+
+            <div class="search">
+              <input #name type="text" placeholder="Search.." name="search">
+              <button (click)="searchText(name.value)" type="submit">
+                חפש קריאה<i class="fa fa-search"></i>
+              </button>
+            </div>
+            
+            <table class="table table-striped tabs">
+              <tbody>
+                <tr *ngFor="let data of Incidents; let i = index">
+                  <!-- <tr *ngFor="let data of  listIncident.Incidents; let i = index">   -->
+                  <!-- <td>{{i+1}}</td> -->
+                  <td>{{data.Subject}}</td>
+                  <td>{{data.Description}}</td>
+                  <td>{{data.CreatedOn}}</td>
+                </tr>
+              </tbody>
+            </table>

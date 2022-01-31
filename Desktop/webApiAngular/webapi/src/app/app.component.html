@@ -1,0 +1,20 @@
+
+<div dir="rtl" class = "topnav" id = "myTopnav">
+    <!-- <button class="icon" onClick=responsiveMenu() >
+      <div class="bar-one"></div>
+      <div class="bar-two"></div>
+      <div class="bar-three"></div>
+    </button> -->
+    <ul>
+       <img id="imagelogo" src="../../assets/greenTechLogo.png" alt="לוגו"> 
+      <li><a [routerLink]="['/']">דף הבית</a></li>
+      <li><a [routerLink]="['/login']">התחבר</a></li>
+      <li> <a [routerLink]="['/myServiceCall']">הקריאות שלי</a></li>
+      <li><a [routerLink]="['/incidnt']">צור קריאה</a></li>
+      <li><a [routerLink]="['/allIncidents']">חפש קריאה</a></li>
+
+    </ul>
+  </div>
+
+  
+<router-outlet></router-outlet>

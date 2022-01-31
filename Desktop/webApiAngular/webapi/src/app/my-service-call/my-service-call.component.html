@@ -1,0 +1,32 @@
+
+ <div class="neon"><p>הקריאות שלך</p></div>
+<div *ngIf="isManager" class="add"><h5> מחובר </h5>
+<div dir="rtl" lang="he" class="container">
+      <div *ngFor="let p of listIncident.Incidents; index as i; first as isFirst" dir="rtl">
+    <header>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     </header>
+     <div class="frame">
+       <button class="custom-btn btn-9" (click)="selectIncident(p.IncidentNumber)">
+        <p>  Description:{{p.Description}}</p>
+       </button>
+     </div>
+  </div>
+    </div>  
+  </div>
+
+    <router-outlet></router-outlet>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

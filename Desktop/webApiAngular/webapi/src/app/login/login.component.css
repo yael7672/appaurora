@@ -1,0 +1,77 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{
+    margin:0 ;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: url(); */
+    /* background-color: pink; */
+    background-size: cover;
+}
+span{
+    top:15px;
+    right: 10px;
+
+}
+.login-box{
+    width: 580px;
+    height: 1900px !important;
+    position: absolute;
+    top: 40%;
+    left:32%;
+    transform: translate(-5%,-5%);
+    color: dark #1a2163;
+}
+.login-box h1{
+    float: left;
+    font-size: 30px;
+    border-bottom: 10px solid #1a2163 ;
+    margin-bottom: 50px;
+    padding: 6px 0;
+}
+
+.textbox{
+    width:100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding:8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #1a2163;
+}
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.textbox input{
+border: none;
+outline: none;
+background: none;
+color: dark #1a2163;
+font-size: 18px;
+width: 80%;
+float: left;
+margin:0 10px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: 2px solid #1a2163;
+    color: dark #1a2163;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin:12px 0;
+}
+.btn3{
+    width: 100%;
+    background: none;
+    border: 2px solid #1a2163;
+    color: dark #1a2163;
+    /* padding: 5px; */
+    font-size: 18px;
+    cursor: pointer;
+    margin:12px 0;
+    bottom:100px !important;
+}

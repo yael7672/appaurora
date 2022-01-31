@@ -1,0 +1,104 @@
+:root {
+	--top-color: #fe5d26;
+	--bottom-color: #ffae93;
+
+	color: #9c1f1f;
+	font-family: "Roboto";
+	font-size: 16px;
+	height: 100%;
+
+	> * {
+		box-sizing: border-box;
+	}
+}
+
+body {
+	// Code below provided in part by Colorzilla :-)
+	background: var(--top-color);
+	background: -moz-linear-gradient(
+		top,
+		var(--top-color) 0%,
+		var(--bottom-color) 100%
+	);
+	background: -webkit-linear-gradient(
+		top,
+		var(--top-color) 0%,
+		var(--bottom-color) 100%
+	);
+	background: linear-gradient(
+		to bottom,
+		var(--top-color) 0%,
+		var(--bottom-color) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FE5D26', endColorstr='#FFAE93',GradientType=0 );
+	// /colorzilla
+
+	height: 100%;
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 1rem;
+	width: 100%;
+}
+
+details {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+
+	// &[open] summary::after {
+	// 	content: "\f107";
+	// }
+}
+.summeryclass{
+	color: rgb(30, 30, 184);
+	font-size: large;
+}
+summary {
+	color: rgb(0, 140, 255);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	&::after {
+		// font-family: "FontAwesome";
+		// content: "\f105";
+		display: inline-block;
+		padding-left: 10px;
+	}
+
+	&::-webkit-details-marker {
+		display: none;
+	}
+}
+
+p {
+	font: italic normal 400 1rem "Roboto";
+	margin: 0;
+	padding: 0.5rem 0;
+	-webkit-animation: fadeIn 0.5s;
+	-moz-animation: fadeIn 0.5s;
+	-ms-animation: fadeIn 0.5s;
+	-o-animation: fadeIn 0.5s;
+	animation: fadeIn 0.5s;
+}
+.container {
+	position: relative; 
+	left:50px !important;
+	bottom:-70px !important;
+	background-color: rgb(149, 149, 236);
+	width: 700px;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

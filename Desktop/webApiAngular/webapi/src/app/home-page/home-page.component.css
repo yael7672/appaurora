@@ -1,0 +1,8 @@
+#imagelogo{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    left:30%;
+    transform: translate(-5%,-5%);
+}

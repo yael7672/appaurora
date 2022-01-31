@@ -1,0 +1,21 @@
+<form (submit)="login111()"  >
+ <div class="login-box">
+  <h1>Login</h1>
+  <!-- <span>{{this.manager}}</span> -->
+  <div class="textbox">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <input [(ngModel)]="name" type="text"  placeholder="UserName" name="22" value=""> 
+  </div>
+  <div class="textbox">
+    <i class="fa fa-lock" aria-hidden="true"></i>
+    <input [(ngModel)]="password" type="password"  placeholder="Password" name="ju" value=""> 
+  </div>
+  <button class="btn" type="submit" name=""  value="Sign In" >Sign In</button>
+  <form  (submit)="logOut()" >
+    <button class="btn" type="submit" name=""  value="logOut">logOut</button>
+    </form>
+</div>
+  </form>
+
+
+<router-outlet></router-outlet>

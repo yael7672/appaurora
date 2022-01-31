@@ -1,0 +1,28 @@
+<div class="container">
+    <form id="contact">
+	<div class="row">
+	</div>
+		<h1>צור קריאה</h1>
+	<div class="row input-container">
+            <div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" [(ngModel)]="incident.Subject" [ngModelOptions]="{standalone: true}" required />
+					<label>Subject</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					
+                    <textarea [(ngModel)]="incident.Description" [ngModelOptions]="{standalone: true}" required></textarea>
+                    <label class="www">Description</label>
+				</div>
+			</div>
+		
+			<div class="col-xl-12">
+                <button  type="submit" class="btn-lrg submit-btn" name="submit" id="contact-submit" data-submit="...Sending" (click)="addcalling()">שלח </button>
+			</div>
+		
+	</div>
+  </form>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 

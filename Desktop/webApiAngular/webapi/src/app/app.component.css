@@ -1,0 +1,125 @@
+
+body {
+    margin: 0px;
+    background: #7e92ce;
+  }
+  #imagelogo{
+    width: 70px;
+  
+}
+    
+  .icon {
+    border: none;
+    background: none;
+  }
+  .topnav {
+    background-color: #1e1d70;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #2830a182;
+  }
+  
+  .topnav ul {
+  display: flex;
+    list-style: none;
+  }
+  
+  .topnav a {
+    text-decoration: none;
+    color: #b5b5b5;
+    padding: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  /*Hide Icon on Desktop*/
+  .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bar-one, .bar-two, .bar-three {
+       width: 2.025rem;
+       height: 0.25rem;
+       background: #b5b5b5;
+       border-radius: 10px;
+       transition: 0.3s linear;
+       position: relative;
+       transform-origin: 1px;
+       border-radius: 5px;
+    }
+    
+      .topnav .icon{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 2.025rem;
+      height: 2rem;
+      background: transparent;
+      border: none;
+      padding: 0;
+      right: 1.5rem;
+      top: 20px;
+    }
+    
+     .bar-one {
+        transform: rotate(0);
+       
+     }
+  
+     .bar-two {
+        opacity: 1;
+        transform: translateX(0);
+      }
+  
+     .bar-three {
+        transform: rotate(0);
+      }
+  
+    
+    .topnav {
+      position: relative;
+    }
+    .topnav ul {
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: -300px;
+      background: #000000;
+      padding: 60px;
+      margin: 0px;
+      box-shadow: 0px 0px 10px 0px #00000082;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+      box-sizing: border-box;
+      
+    }
+    
+    .topnav li {
+      padding: 10px 0px;
+     
+     }
+  
+    
+    /*After open class is added*/
+    
+    .open .bar-one {
+      transform: rotate(45deg);
+    }
+  
+     .open .bar-two {
+       opacity: 0;
+      }
+  
+      .open .bar-three {
+         transform: rotate(-45deg);
+      }
+    
+    .topnav.open ul {
+      top: 100%;
+    }
+  
+    
+  }
+  
